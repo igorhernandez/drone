@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image:url('bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-position:top;
+        }
+        .jato{
+            top:200px;
+            position:absolute;
+            max-width: 30px;
+            animation-name:jato;
+            animation-duration: 9s;
+            animation-iteration-count:infinite;
+        }
+        .animate-img{
+            top:100px;
+            left:100px;
+            max-width: 150px;
+            position:absolute;
+            animation-name:animate;
+            animation-duration:6s;
+            animation-iteration-count:infinite;
+        }
+        @keyframes animate {
+            0% {top:150px}
+            25% {left:1000px;}
+            50% {top:180px}
+            75% {top:120px;left:100px}
+            100%{top:150px}
+        }
+        @keyframes jato {
+            0% {left:-100px}
+            100%{left:2000px;}
+        }
+    </style>
+    <img src="jato.svg" alt="" class="jato">
+    <img class="animate-img" src="drone.svg" alt="">
+</body>
+</html>
